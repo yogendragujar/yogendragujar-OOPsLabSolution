@@ -33,7 +33,7 @@ public class Department{
 			departmentName="Legal";
 			break;
 		default:
-			departmentName=null;
+			departmentName="Invalid Department";
 			
 		}
 		in.close();

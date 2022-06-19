@@ -22,7 +22,7 @@ public class CredentialService extends Employee{
 	
 	String generateEmailAddress(String firstName,String lastName, String deptName) {
 		String mailAddress = null;
-		mailAddress = firstName+lastName+"@"+deptName.toLowerCase().replaceAll(" ", "")+".abc.com";
+		mailAddress = firstName.toLowerCase()+lastName.toLowerCase()+"@"+deptName.toLowerCase().replaceAll(" ", "")+".abc.com";
 		return mailAddress;
 	}
 	
