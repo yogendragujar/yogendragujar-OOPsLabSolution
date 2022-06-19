@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class Department{
 	String deptName;
-//	Department(){
-//		this.deptName=getDepartment();
-//	}
 	
 	public String getDepartment() {
 		String departmentName = null;

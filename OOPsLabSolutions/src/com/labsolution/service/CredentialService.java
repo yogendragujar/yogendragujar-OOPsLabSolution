@@ -27,6 +27,8 @@ public class CredentialService extends Employee{
 	}
 	
 	String generatePassword() {
+		//below block ensures that it has one upper case, one number and special character 
+		
 		String password=null;
 		char [] passArray = new char [8];
 		char rCharacter = ' ';
@@ -59,10 +61,11 @@ public class CredentialService extends Employee{
 	}
 	
 	static char getRandCharacter(int min, int max) {
+		//Helper method for generate password method
 		char randCharacter = ' ';
 		Random rand = new Random();
 //		int num = min + rand.nextInt(max);
-		int num = rand.nextInt(max - min) + min; //took help for google.
+		int num = rand.nextInt(max - min) + min; //took help from google.
 		randCharacter = (char) num;
 		return randCharacter;
 	}
