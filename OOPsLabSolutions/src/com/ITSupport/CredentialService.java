@@ -1,6 +1,8 @@
 package com.ITSupport;
 
 import java.util.Random;
+
+import com.labsolution.model.Employee;
 /*
  * generatePassword
  * generateEmailAddress
@@ -30,20 +32,20 @@ public class CredentialService extends Employee{
 		char rCharacter = ' ';
 		for(int i=0;i<8;i++) {
 			switch (i) {
-				case 1:
+				case 0:
 					rCharacter=getRandCharacter(65,91);
 //					System.out.println(getRandNum(65,91));
 					sbPass.append(rCharacter); //upper case character
 					break;
-				case 3:
+				case 2:
 					rCharacter=getRandCharacter(48,58);
 					sbPass.append(rCharacter); //number character
 					break;
-				case 5:
+				case 4:
 					rCharacter = getRandCharacter(58,65);
 					sbPass.append(rCharacter); //special character
 					break;
-				case 7:
+				case 6:
 					rCharacter = getRandCharacter(97,123);
 					sbPass.append(rCharacter); //special character
 					break;

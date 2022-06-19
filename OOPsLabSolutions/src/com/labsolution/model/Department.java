@@ -1,4 +1,4 @@
-package com.ITSupport;
+package com.labsolution.model;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Department{
 //		this.deptName=getDepartment();
 //	}
 	
-	String getDepartment() {
+	public String getDepartment() {
 		String departmentName = null;
 		Scanner in = new Scanner(System.in);
 		int option;

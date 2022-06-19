@@ -1,5 +1,7 @@
 package com.ITSupport;
 
+import com.labsolution.model.Department;
+
 public class MainClassITSupport {
 
 	public static void main(String[] args) {
