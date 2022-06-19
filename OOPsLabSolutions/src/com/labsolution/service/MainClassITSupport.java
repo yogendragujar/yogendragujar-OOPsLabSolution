@@ -1,4 +1,4 @@
-package com.ITSupport;
+package com.labsolution.service;
 
 import com.labsolution.model.Department;
 
