@@ -27,7 +27,7 @@ public class Department{
 			departmentName="Admin";
 			break;
 		case 3:
-			departmentName="Human Resource";
+			departmentName="HR";
 			break;
 		case 4:
 			departmentName="Legal";
