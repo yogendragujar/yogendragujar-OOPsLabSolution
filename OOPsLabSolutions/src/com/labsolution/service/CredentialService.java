@@ -62,7 +62,7 @@ public class CredentialService extends Employee{
 		char randCharacter = ' ';
 		Random rand = new Random();
 //		int num = min + rand.nextInt(max);
-		int num = rand.nextInt(max - min) + min;
+		int num = rand.nextInt(max - min) + min; //took help for google.
 		randCharacter = (char) num;
 		return randCharacter;
 	}
