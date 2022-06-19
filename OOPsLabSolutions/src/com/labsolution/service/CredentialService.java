@@ -28,7 +28,6 @@ public class CredentialService extends Employee{
 	
 	String generatePassword() {
 		String password=null;
-		StringBuilder sbPass = new StringBuilder();
 		char [] passArray = new char [8];
 		char rCharacter = ' ';
 		for(int i=0;i<8;i++) {
@@ -36,31 +35,25 @@ public class CredentialService extends Employee{
 				case 0:
 					rCharacter=getRandCharacter(65,91);
 //					System.out.println(getRandNum(65,91));
-					passArray[i] = rCharacter;
-//					sbPass.append(rCharacter); //upper case character
+					passArray[i] = rCharacter;	//upper case character
 					break;
 				case 2:
 					rCharacter=getRandCharacter(48,58);
-					passArray[i] = rCharacter;
-//					sbPass.append(rCharacter); //number character
+					passArray[i] = rCharacter;//number character
 					break;
 				case 4:
 					rCharacter = getRandCharacter(58,65);
-					passArray[i] = rCharacter;
-//					sbPass.append(rCharacter); //special character
+					passArray[i] = rCharacter;	//special character
 					break;
 				case 6:
 					rCharacter = getRandCharacter(97,123);
-					passArray[i] = rCharacter;
-//					sbPass.append(rCharacter); //special character
+					passArray[i] = rCharacter;	//special character
 					break;
 				default:
 					rCharacter = getRandCharacter(48,123);
-					passArray[i] = rCharacter;
-//					sbPass.append(rCharacter); //any character
+					passArray[i] = rCharacter;	//any character
 			}
 		}
-//		password = sbPass.toString();
 		password = String.valueOf(passArray);
 		return password;
 	}
