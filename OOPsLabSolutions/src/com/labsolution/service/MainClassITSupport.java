@@ -26,5 +26,6 @@ public class MainClassITSupport {
 				System.out.println("Invalid input for department, exiting program");
 			}
 		}
+		scInput.close();
 	}
 }
